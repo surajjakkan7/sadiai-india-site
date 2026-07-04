@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log in — sadiaiindia</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"></span>
+      <span class="brand-name">sadiaiindia</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#try-on">Virtual Try-On</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="signup.html">Sign up</a>
+    </nav>
+  </div>
+</header>
+
+<div class="auth-shell">
+  <div class="auth-card">
+    <h1>Welcome back</h1>
+    <p class="auth-sub">Log in to your sadiaiindia account.</p>
+
+    <div id="authError" class="auth-error"></div>
+
+    <form class="auth-form" id="loginForm">
+      <div>
+        <label for="l-email">Email</label>
+        <input type="email" id="l-email" required>
+      </div>
+      <div>
+        <label for="l-password">Password</label>
+        <input type="password" id="l-password" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Log in</button>
+    </form>
+
+    <p class="auth-switch">Don't have an account? <a href="signup.html">Sign up</a></p>
+  </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="script.js"></script>
+<script>
+  const loginForm = document.getElementById('loginForm');
+  const authError = document.getElementById('authError');
+
+  loginForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    authError.classList.remove('show');
+
+    const email = document.getElementById('l-email').value.trim();
+    const password = document.getElementById('l-password').value;
+
+    firebase.auth().signInWithEmailAndPassword(email, password)
+      .then(() => {
+        window.location.href = 'index.html';
+      })
+      .catch((err) => {
+        authError.textContent = err.message;
+        authError.classList.add('show');
+      });
+  });
+</script>
+</body>
+</html>

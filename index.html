@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sadguru Enterprise — Makers of JJ Boutique</title>
-<meta name="description" content="Sadguru Enterprise, Sholapur — creators of JJ Boutique, an AI-powered saree virtual try-on app for boutiques, tailors and shoppers.">
+<title>sadiaiindia — AI Virtual Try-On for Sarees</title>
+<meta name="description" content="sadiaiindia lets boutiques and shoppers preview any saree instantly with AI — seven regional draping styles, one photo, seconds to see it.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,14 +14,16 @@
 <header>
   <div class="nav">
     <a href="#top" class="brand">
-      <span class="brand-name">Sadguru Enterprise</span>
-      <span class="brand-sub">Sholapur, Maharashtra</span>
+      <span class="brand-mark"></span>
+      <span class="brand-name">sadiaiindia</span>
     </a>
     <nav class="nav-links">
-      <a href="#product">Product</a>
+      <a href="#try-on">Virtual Try-On</a>
       <a href="#pricing">Pricing</a>
+      <a href="#blog">Blog</a>
       <a href="#contact">Contact</a>
-      <a href="#contact" class="nav-cta">Get in touch</a>
+      <a href="login.html">Log in</a>
+      <a href="signup.html" class="btn btn-primary btn-sm">Sign up</a>
     </nav>
     <button class="menu-toggle" aria-label="Menu">&#9776;</button>
   </div>
@@ -29,132 +31,173 @@
 
 <main id="top">
 
-  <section class="hero-band">
-    <div class="wrap hero" style="padding:0;">
+  <section class="hero">
+    <div class="dye-wash"></div>
+    <div class="wrap hero-inner">
       <div>
-        <span class="eyebrow">AI Virtual Try-On for Sarees</span>
-        <h1>See the drape before you drape it.</h1>
-        <p class="lead">Sadguru Enterprise builds JJ Boutique — an app that shows a customer exactly how a saree will look on them, in seconds, across seven regional draping styles. Built for boutique shops and tailors in Sholapur and beyond.</p>
+        <span class="eyebrow">AI Virtual Try-On, Built for Sarees</span>
+        <h1>See any saree on yourself before it's even unwrapped.</h1>
+        <p class="lead">sadiaiindia turns one photo into an instant, realistic preview across seven regional draping styles — built for boutique shops, tailors, and shoppers across India.</p>
         <div class="hero-ctas">
           <a href="#contact" class="btn btn-primary">Book a Free Demo</a>
-          <a href="#product" class="btn btn-ghost">See how it works</a>
+          <a href="#try-on" class="btn btn-ghost">See how it works</a>
         </div>
       </div>
-      <div class="hero-art" style="background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.2);">
-        <svg viewBox="0 0 320 400" xmlns="http://www.w3.org/2000/svg" style="width:70%;">
-          <rect x="20" y="10" width="280" height="380" rx="18" fill="none" stroke="#D8BE84" stroke-width="3"/>
-          <rect x="34" y="34" width="252" height="300" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.2)"/>
-          <path d="M60 260 Q160 200 260 260 L260 320 Q160 280 60 320 Z" fill="#D8BE84" opacity="0.9"/>
-          <path d="M60 260 Q160 200 260 260" fill="none" stroke="#1F6F5C" stroke-width="4"/>
-          <circle cx="160" cy="150" r="46" fill="rgba(255,255,255,.15)"/>
-          <circle cx="160" cy="150" r="46" fill="none" stroke="#D8BE84" stroke-width="2" stroke-dasharray="4 5"/>
-          <rect x="70" y="350" width="180" height="10" fill="#1F6F5C" opacity="0.7"/>
+      <div class="hero-art">
+        <svg viewBox="0 0 300 360" xmlns="http://www.w3.org/2000/svg" style="width:62%;">
+          <rect x="20" y="10" width="260" height="340" rx="20" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.25)" stroke-width="2"/>
+          <path d="M50 240 Q150 180 250 240 L250 300 Q150 260 50 300 Z" fill="#E8A93C" opacity="0.9"/>
+          <path d="M50 240 Q150 180 250 240" fill="none" stroke="#B5451D" stroke-width="4"/>
+          <circle cx="150" cy="140" r="42" fill="rgba(255,255,255,.18)"/>
+          <circle cx="150" cy="140" r="42" fill="none" stroke="#E8A93C" stroke-width="2" stroke-dasharray="4 5"/>
         </svg>
       </div>
     </div>
   </section>
 
-  <div class="kinaari"></div>
+  <section class="trusted">
+    <div class="wrap">
+      <div class="trusted-label">Trusted by boutiques across India</div>
+      <div class="trusted-row">
+        <span>Boutique Studio</span>
+        <span>Weaves &amp; Co.</span>
+        <span>The Saree House</span>
+        <span>Zari Collective</span>
+        <span>Draped</span>
+      </div>
+    </div>
+  </section>
 
-  <section id="steps">
+  <section id="try-on">
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow">How it works</span>
         <h2>Three easy steps to a try-on</h2>
-        <p>No technical skill needed. A customer picks up their phone or steps up to the shop kiosk, and it takes seconds.</p>
+        <p>No app download or technical skill needed — a customer's phone or a shop kiosk is all it takes.</p>
       </div>
       <div class="steps">
         <div class="step">
           <div class="step-num">01</div>
           <h3>Upload or capture a photo</h3>
-          <p>The customer uploads a photo, or stands in front of the shop kiosk camera.</p>
+          <p>One photo is all sadiaiindia needs — from a phone, or a shop's kiosk camera.</p>
         </div>
         <div class="step">
           <div class="step-num">02</div>
-          <h3>Select a saree &amp; drape style</h3>
-          <p>Choose from the shop's catalogue and one of seven regional draping styles.</p>
+          <h3>Select a saree &amp; draping style</h3>
+          <p>Pick from the shop's catalogue and choose a regional draping style to match.</p>
         </div>
         <div class="step">
           <div class="step-num">03</div>
-          <h3>Get an instant preview</h3>
-          <p>JJ Boutique generates a realistic try-on image in seconds, ready to compare and decide.</p>
+          <h3>Get an instant AI preview</h3>
+          <p>A realistic try-on image is generated in seconds — ready to compare, save, or share.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="kinaari"></div>
-
-  <section id="about">
-    <div class="wrap about-grid">
-      <div>
-        <span class="eyebrow">About</span>
-        <h2>A Sholapur business, building for India's boutiques.</h2>
-        <p>Sadguru Enterprise is a proprietorship based in Sholapur, Maharashtra. Our product, JJ Boutique, brings AI-powered virtual try-on to the saree trade — helping shop owners cut down on physical trials and helping shoppers decide with confidence, before a single yard is unwrapped.</p>
-      </div>
-      <div>
-        <div class="about-fact">
-          <div class="label">Founded</div>
-          <div class="value">Sholapur, Maharashtra</div>
-        </div>
-        <div class="about-fact">
-          <div class="label">Product</div>
-          <div class="value">JJ Boutique — Android app for saree virtual try-on</div>
-        </div>
-        <div class="about-fact">
-          <div class="label">Who it's for</div>
-          <div class="value">Boutique owners, tailoring shops, and their customers</div>
-        </div>
-        <div class="about-fact">
-          <div class="label">What it does</div>
-          <div class="value">Generates a realistic preview of a customer wearing a chosen saree, in seven regional draping styles — Bengali, Gujarati, Kokni, Madisaru, Nivi, Peshwai, and with dupatta</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="kinaari"></div>
-
-  <section id="product">
+  <section id="styles">
     <div class="wrap">
       <div class="section-head">
-        <span class="eyebrow">Product</span>
-        <h2>How JJ Boutique works</h2>
+        <span class="eyebrow">Draping styles</span>
+        <h2>Seven regional styles, done right</h2>
+        <p>sadiaiindia doesn't just wrap a saree generically — it matches real regional draping conventions.</p>
       </div>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="num">01</div>
-          <h3>Upload once, try many</h3>
-          <p>A customer's photo is used to generate try-on previews across an entire catalogue of sarees, without a single physical change of clothes.</p>
+      <div class="style-grid">
+        <div class="style-card"><div class="style-swatch"></div><h3>Bengali</h3><p>Classic pleats, front pallu</p></div>
+        <div class="style-card"><div class="style-swatch"></div><h3>Gujarati</h3><p>Pallu draped to the front</p></div>
+        <div class="style-card"><div class="style-swatch"></div><h3>Kokni</h3><p>Coastal Maharashtrian style</p></div>
+        <div class="style-card"><div class="style-swatch"></div><h3>Madisaru</h3><p>Traditional Tamil Brahmin drape</p></div>
+        <div class="style-card"><div class="style-swatch"></div><h3>Nivi</h3><p>The most common modern drape</p></div>
+        <div class="style-card"><div class="style-swatch"></div><h3>Peshwai</h3><p>Maharashtrian nauvari style</p></div>
+        <div class="style-card"><div class="style-swatch"></div><h3>With Dupatta</h3><p>Saree paired with dupatta drape</p></div>
+        <div class="style-card"><div class="style-swatch"></div><h3>More added regularly</h3><p>New styles as boutiques request them</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="usecases">
+    <div class="wrap">
+      <div class="section-head left">
+        <span class="eyebrow">Where it fits</span>
+        <h2>Built for how sarees are actually sold</h2>
+      </div>
+      <div class="usecase-grid">
+        <div class="usecase-card">
+          <h3>Boutique try-on counter</h3>
+          <p>Let a customer preview a dozen sarees without changing once — right at the counter.</p>
         </div>
-        <div class="feature-card">
-          <div class="num">02</div>
-          <h3>Seven draping styles</h3>
-          <p>Bengali, Gujarati, Kokni, Madisaru, Nivi, Peshwai, and with-dupatta — the app matches regional draping conventions, not just a generic wrap.</p>
+        <div class="usecase-card">
+          <h3>Tailor shop kiosk</h3>
+          <p>A dual-camera kiosk setup captures the customer and the garment separately for a clean preview.</p>
         </div>
-        <div class="feature-card">
-          <div class="num">03</div>
-          <h3>Built for the shop counter</h3>
-          <p>A kiosk mode runs on a shop's own display, with a front camera for the customer and a second camera for the garment, so try-on happens right at the counter.</p>
+        <div class="usecase-card">
+          <h3>Online saree listings</h3>
+          <p>Show shoppers a preview on a real body shape, not just a mannequin or model photo.</p>
+        </div>
+        <div class="usecase-card">
+          <h3>Wedding &amp; festive shopping</h3>
+          <p>Help shoppers narrow down a big catalogue quickly during high-pressure festive and wedding shopping.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="stats-band">
+  <section>
     <div class="wrap">
-      <div class="stats-grid">
-        <div class="stat">
-          <div class="stat-num">10x</div>
-          <div class="stat-label">Faster than a physical trial</div>
+      <div class="stats-band">
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="stat-num">10x</div>
+            <div class="stat-label">Faster than a physical trial</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">7</div>
+            <div class="stat-label">Regional draping styles</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">1</div>
+            <div class="stat-label">Photo needed for the whole catalogue</div>
+          </div>
         </div>
-        <div class="stat">
-          <div class="stat-num">7</div>
-          <div class="stat-label">Regional draping styles supported</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Preview gallery</span>
+        <h2>A glimpse of the try-on experience</h2>
+        <p>Placeholder gallery — swap these with real try-on samples once you have them.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <svg viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg" style="width:70%;">
+            <circle cx="60" cy="40" r="22" fill="#EAEBF5" stroke="#B5451D" stroke-width="2"/>
+            <path d="M20 150 Q60 90 100 150 L100 160 L20 160 Z" fill="#22306B"/>
+            <path d="M20 150 Q60 90 100 150" fill="none" stroke="#E8A93C" stroke-width="4"/>
+          </svg>
         </div>
-        <div class="stat">
-          <div class="stat-num">1</div>
-          <div class="stat-label">Photo needed to try an entire catalogue</div>
+        <div class="gallery-item">
+          <svg viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg" style="width:70%;">
+            <circle cx="60" cy="40" r="22" fill="#EAEBF5" stroke="#22306B" stroke-width="2"/>
+            <path d="M20 150 Q60 95 100 150 L100 160 L20 160 Z" fill="#B5451D"/>
+            <path d="M20 150 Q60 95 100 150" fill="none" stroke="#22306B" stroke-width="4"/>
+          </svg>
+        </div>
+        <div class="gallery-item">
+          <svg viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg" style="width:70%;">
+            <circle cx="60" cy="40" r="22" fill="#EAEBF5" stroke="#E8A93C" stroke-width="2"/>
+            <path d="M20 150 Q60 90 100 150 L100 160 L20 160 Z" fill="#4A5FC1"/>
+            <path d="M20 150 Q60 90 100 150" fill="none" stroke="#B5451D" stroke-width="4"/>
+          </svg>
+        </div>
+        <div class="gallery-item">
+          <svg viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg" style="width:70%;">
+            <circle cx="60" cy="40" r="22" fill="#EAEBF5" stroke="#4A5FC1" stroke-width="2"/>
+            <path d="M20 150 Q60 95 100 150 L100 160 L20 160 Z" fill="#E8A93C"/>
+            <path d="M20 150 Q60 95 100 150" fill="none" stroke="#141B45" stroke-width="4"/>
+          </svg>
         </div>
       </div>
     </div>
@@ -164,105 +207,128 @@
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow">Pricing</span>
-        <h2>Simple plans for boutique partners</h2>
-        <p>Monthly plans for shop owners using JJ Boutique. Figures shown are placeholders — update with your final pricing before publishing.</p>
+        <h2>Simple plans for every shop size</h2>
+        <p>Figures shown are placeholders — update with your final pricing before publishing.</p>
       </div>
       <div class="pricing-grid">
         <div class="plan">
-          <div class="plan-band"></div>
-          <div class="plan-body">
-            <div class="plan-tag">Starter</div>
-            <div class="plan-name">For small shops</div>
-            <div class="plan-price">₹499<span>/month</span></div>
-            <ul>
-              <li>Up to 100 try-ons / month</li>
-              <li>All 7 draping styles</li>
-              <li>Single device</li>
-              <li>Email support</li>
-            </ul>
-            <a href="#contact" class="btn btn-ghost">Get started</a>
-          </div>
+          <div class="plan-tag">Starter</div>
+          <div class="plan-price">₹499<span>/month</span></div>
+          <ul>
+            <li>Up to 100 try-ons / month</li>
+            <li>All 7 draping styles</li>
+            <li>Single device</li>
+            <li>Email support</li>
+          </ul>
+          <button class="btn btn-ghost pay-btn" data-plan="Starter" data-amount="499">Get started</button>
         </div>
         <div class="plan popular">
-          <div class="plan-band"></div>
-          <div class="plan-body">
-            <div class="plan-tag">Popular</div>
-            <div class="plan-name">For growing boutiques</div>
-            <div class="plan-price">₹999<span>/month</span></div>
-            <ul>
-              <li>Up to 500 try-ons / month</li>
-              <li>All 7 draping styles</li>
-              <li>Kiosk + mobile use</li>
-              <li>Priority support</li>
-            </ul>
-            <a href="#contact" class="btn btn-primary">Get started</a>
-          </div>
+          <div class="plan-tag">Popular</div>
+          <div class="plan-price">₹999<span>/month</span></div>
+          <ul>
+            <li>Up to 500 try-ons / month</li>
+            <li>All 7 draping styles</li>
+            <li>Kiosk + mobile use</li>
+            <li>Priority support</li>
+          </ul>
+          <button class="btn btn-primary pay-btn" data-plan="Popular" data-amount="999">Get started</button>
         </div>
         <div class="plan">
-          <div class="plan-band"></div>
-          <div class="plan-body">
-            <div class="plan-tag">Pro</div>
-            <div class="plan-name">For multi-branch shops</div>
-            <div class="plan-price">₹1999<span>/month</span></div>
-            <ul>
-              <li>Unlimited try-ons</li>
-              <li>All 7 draping styles</li>
-              <li>Multiple devices / branches</li>
-              <li>Dedicated support</li>
-            </ul>
-            <a href="#contact" class="btn btn-ghost">Get started</a>
+          <div class="plan-tag">Pro</div>
+          <div class="plan-price">₹1999<span>/month</span></div>
+          <ul>
+            <li>Unlimited try-ons</li>
+            <li>All 7 draping styles</li>
+            <li>Multiple devices / branches</li>
+            <li>Dedicated support</li>
+          </ul>
+          <button class="btn btn-ghost pay-btn" data-plan="Pro" data-amount="1999">Get started</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Insights</span>
+        <h2>From the blog</h2>
+      </div>
+      <div class="blog-grid">
+        <div class="blog-card">
+          <div class="blog-thumb"></div>
+          <div class="blog-body">
+            <div class="blog-tag">Guide</div>
+            <h3>Why AI try-on works for Indian sarees</h3>
+            <p>The draping problem generic try-on tools miss — and how regional styles change everything.</p>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-thumb"></div>
+          <div class="blog-body">
+            <div class="blog-tag">Comparison</div>
+            <h3>AI try-on vs. the trial room</h3>
+            <p>Where a kiosk preview saves time, and where a physical trial still wins.</p>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-thumb"></div>
+          <div class="blog-body">
+            <div class="blog-tag">Boutique tips</div>
+            <h3>Getting your catalogue try-on ready</h3>
+            <p>A simple checklist for photographing sarees so AI try-on renders them accurately.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="kinaari"></div>
-
   <section id="contact">
-    <div class="wrap contact-grid">
-      <div>
-        <span class="eyebrow">Contact</span>
-        <h2>Talk to us</h2>
-        <p>Reach out for boutique partnerships, app support, or business queries.</p>
-        <div class="contact-item">
-          <div class="label">Business name</div>
-          <div class="value">Sadguru Enterprise</div>
-        </div>
-        <div class="contact-item">
-          <div class="label">Location</div>
-          <div class="value">Sholapur, Maharashtra, India</div>
-        </div>
-        <div class="contact-item">
-          <div class="label">Email</div>
-          <div class="value">yourname@example.com</div>
-        </div>
-        <div class="contact-item">
-          <div class="label">Phone</div>
-          <div class="value">+91 00000 00000</div>
-        </div>
-      </div>
-      <div>
-        <form class="contact-form" id="leadForm">
-          <div>
-            <label for="f-name">Name*</label>
-            <input type="text" id="f-name" name="name" required>
+    <div class="wrap">
+      <div class="contact-shell">
+        <div>
+          <span class="eyebrow">Contact</span>
+          <h2>Book a free demo</h2>
+          <p>Reach out for boutique partnerships, app support, or business queries.</p>
+          <div class="contact-item">
+            <div class="label">Business name</div>
+            <div class="value">sadiaiindia</div>
           </div>
-          <div>
-            <label for="f-brand">Shop / Brand name</label>
-            <input type="text" id="f-brand" name="brand">
+          <div class="contact-item">
+            <div class="label">Location</div>
+            <div class="value">Sholapur, Maharashtra, India</div>
           </div>
-          <div>
-            <label for="f-email">Email*</label>
-            <input type="email" id="f-email" name="email" required>
+          <div class="contact-item">
+            <div class="label">Email</div>
+            <div class="value">yourname@example.com</div>
           </div>
-          <div>
-            <label for="f-phone">Phone*</label>
-            <input type="tel" id="f-phone" name="phone" required>
+          <div class="contact-item">
+            <div class="label">Phone</div>
+            <div class="value">+91 00000 00000</div>
           </div>
-          <button type="submit" class="btn btn-primary">Book a Free Demo</button>
-          <p class="form-note">By submitting, you agree to our <a href="terms-and-conditions.html">Terms &amp; Conditions</a> and <a href="privacy-policy.html">Privacy Policy</a>. This form currently needs a backend or form service (e.g. Formspree) connected to receive submissions.</p>
-        </form>
+        </div>
+        <div>
+          <form class="contact-form" id="leadForm">
+            <div>
+              <label for="f-name">Name*</label>
+              <input type="text" id="f-name" name="name" required>
+            </div>
+            <div>
+              <label for="f-brand">Shop / Brand name</label>
+              <input type="text" id="f-brand" name="brand">
+            </div>
+            <div>
+              <label for="f-email">Email*</label>
+              <input type="email" id="f-email" name="email" required>
+            </div>
+            <div>
+              <label for="f-phone">Phone*</label>
+              <input type="tel" id="f-phone" name="phone" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Book a Free Demo</button>
+            <p class="form-note">By submitting, you agree to our <a href="terms-and-conditions.html">Terms &amp; Conditions</a> and <a href="privacy-policy.html">Privacy Policy</a>. Connect this form to Formspree, Google Forms, or your own backend to receive submissions.</p>
+          </form>
+        </div>
       </div>
     </div>
   </section>
@@ -270,16 +336,27 @@
 </main>
 
 <footer>
-  <div class="wrap footer-grid">
-    <div class="footer-copy">&copy; <span id="year"></span> Sadguru Enterprise. All rights reserved.</div>
-    <div class="footer-links">
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
-      <a href="refund-policy.html">Refund Policy</a>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="brand">
+        <span class="brand-mark"></span>
+        <span class="brand-name">sadiaiindia</span>
+      </div>
+      <div class="footer-links">
+        <a href="#try-on">Virtual Try-On</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+        <a href="refund-policy.html">Refund Policy</a>
+      </div>
     </div>
+    <div class="wrap footer-copy">&copy; <span id="year"></span> sadiaiindia. All rights reserved.</div>
   </div>
 </footer>
 
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
