@@ -42,6 +42,9 @@
       <button type="submit" class="btn btn-primary">Log in</button>
     </form>
 
+    <div class="auth-divider">or</div>
+    <button id="googleSignIn" class="btn btn-ghost" style="width:100%;text-align:center;">Continue with Google</button>
+
     <p class="auth-switch">Don't have an account? <a href="signup.html">Sign up</a></p>
   </div>
 </div>
@@ -62,6 +65,19 @@
     const password = document.getElementById('l-password').value;
 
     firebase.auth().signInWithEmailAndPassword(email, password)
+      .then(() => {
+        window.location.href = 'index.html';
+      })
+      .catch((err) => {
+        authError.textContent = err.message;
+        authError.classList.add('show');
+      });
+  });
+
+  document.getElementById('googleSignIn').addEventListener('click', function () {
+    authError.classList.remove('show');
+    const provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider)
       .then(() => {
         window.location.href = 'index.html';
       })
