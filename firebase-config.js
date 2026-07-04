@@ -11,7 +11,7 @@ const firebaseConfig = {
   projectId: "sareeweb-25006",
   storageBucket: "sareeweb-25006.firebasestorage.app",
   messagingSenderId: "391602121288",
-  appId: "1:391602121288:web:e8c4c89d1637d26356c67d"
+  appId: "1:391602121288:web:539733a171b31dc456c67d"
 };
 
 firebase.initializeApp(firebaseConfig);
