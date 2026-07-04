@@ -5,13 +5,12 @@
 // JJ Boutique / sadiaiindia Android app if you want shared users).
 // ============================================================
 const firebaseConfig = {
-  apiKey: "AIzaSyBBNEMUfRBm1PhE-BGa73eljKW3sWqNG8o",
-  authDomain: "sareeweb-25006.firebaseapp.com",
-  databaseURL: "https://sareeweb-25006-default-rtdb.firebaseio.com",
-  projectId: "sareeweb-25006",
-  storageBucket: "sareeweb-25006.firebasestorage.app",
-  messagingSenderId: "391602121288",
-  appId: "1:391602121288:web:539733a171b31dc456c67d"
+  apiKey: "AIzaSyD51WLCZecyG9u3PDqeUgzxeW3y4Nw9C_I",
+  authDomain: "sareeweb-1.firebaseapp.com",
+  projectId: "sareeweb-1",
+  storageBucket: "sareeweb-1.firebasestorage.app",
+  messagingSenderId: "229906922846",
+  appId: "1:229906922846:web:5fecd7130920d33c0123cf"
 };
 
 firebase.initializeApp(firebaseConfig);
