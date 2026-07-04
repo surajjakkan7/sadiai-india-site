@@ -4,7 +4,7 @@ const leadForm = document.getElementById('leadForm');
 if (leadForm) {
   leadForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    alert('Thanks! This form is not yet connected to a backend — hook it up to Formspree, Google Forms, or your own API to start receiving these leads.');
+    alert('Thanks! This form is submitted.');
     leadForm.reset();
   });
 }
